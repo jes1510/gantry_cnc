@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CADFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="0.9.8.0" Name="z_limit_bracket_b" units="Inches">
+  <layers>
+    <layer name="0" color="255,255,255">
+      <ModificationCount>0</ModificationCount>
+      <objects>
+        <pline id="20" Closed="true">
+          <ModificationCount>1</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p b="0.41421356237309492">0.0625,0.75,0</p>
+            <p>0,0.6875,0</p>
+            <p b="0.41421356237309503">0,0.0625,0</p>
+            <p>0.0625,0,0</p>
+            <p b="0.414213562373095">3.0625,0,0</p>
+            <p>3.125,0.0625,0</p>
+            <p b="0.41421356237309503">3.125,0.6875,0</p>
+            <p>3.0625,0.75,0</p>
+          </pts>
+        </pline>
+      </objects>
+    </layer>
+    <layer name="Holes" color="255,255,255">
+      <ModificationCount>0</ModificationCount>
+      <objects>
+        <circle id="1" c="0.75,0.625,0" d="0.125">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+        <circle id="2" c="0.75,0.125,0" d="0.125">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+        <circle id="12" c="2.07,0.125,0" d="0.125">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+        <circle id="13" c="3,0.5,0" d="0.125">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+      </objects>
+    </layer>
+    <layer name="switch_outline" color="255,255,255">
+      <ModificationCount>0</ModificationCount>
+      <objects>
+        <line id="3">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>2.875,0.5</p>
+            <p>3,0.5</p>
+          </pts>
+        </line>
+        <line id="4">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>1.945,0.125</p>
+            <p>1.82,0.125</p>
+          </pts>
+        </line>
+        <line id="5">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>3,0.625</p>
+            <p>1.82,0.625</p>
+          </pts>
+        </line>
+        <line id="6">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>1.82,0</p>
+            <p>3,0</p>
+          </pts>
+        </line>
+        <line id="7">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>3,0</p>
+            <p>3,0.625</p>
+          </pts>
+        </line>
+        <line id="8">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>1.82,0.625</p>
+            <p>1.82,0</p>
+          </pts>
+        </line>
+      </objects>
+    </layer>
+    <layer name="bend" color="255,255,255">
+      <ModificationCount>0</ModificationCount>
+      <objects>
+        <line id="17">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>1.625,0</p>
+            <p>1.625,0.75</p>
+          </pts>
+        </line>
+      </objects>
+    </layer>
+  </layers>
+  <MachiningOptions>
+    <OutFile>{$cbfile.name}.nc</OutFile>
+    <FastPlungeHeight>-1</FastPlungeHeight>
+    <Stock>
+      <PMin>0,0</PMin>
+      <PMax>0,0</PMax>
+      <Color>255,165,0</Color>
+    </Stock>
+    <ToolProfile>Unspecified</ToolProfile>
+    <MachiningOrigin />
+  </MachiningOptions>
+  <parts>
+    <part Name="Part1">
+      <machineops>
+        <drill>
+          <TargetDepth state="Value">-0.08</TargetDepth>
+          <DepthIncrement state="Value">0.001</DepthIncrement>
+          <HoleDiameter state="Value">0.125</HoleDiameter>
+          <DrillLeadOut state="Default">False</DrillLeadOut>
+          <SpiralFlatBase state="Default">False</SpiralFlatBase>
+          <LeadOutLength state="Default">0</LeadOutLength>
+          <DrillingMethod state="Default">CannedCycle</DrillingMethod>
+          <PeckDistance state="Default">0</PeckDistance>
+          <RetractHeight state="Default">0</RetractHeight>
+          <Dwell state="Default">0</Dwell>
+          <CustomScript state="Default" />
+          <StockSurface state="Default">0</StockSurface>
+          <RoughingClearance state="Default">0</RoughingClearance>
+          <ClearancePlane state="Value">0.5</ClearancePlane>
+          <SpindleDirection state="Default">Off</SpindleDirection>
+          <SpindleSpeed state="Default">0</SpindleSpeed>
+          <SpindleRange state="Default">0</SpindleRange>
+          <VelocityMode state="Default">Undefined</VelocityMode>
+          <primitive>
+            <prim>1</prim>
+            <prim>2</prim>
+            <prim>12</prim>
+            <prim>13</prim>
+          </primitive>
+          <Transform state="Default" />
+          <WorkPlane state="Default">XY</WorkPlane>
+          <OptimisationMode state="Default">Standard</OptimisationMode>
+          <RoughingFinishing state="Default">Roughing</RoughingFinishing>
+          <ToolDiameter state="Value">0.125</ToolDiameter>
+          <ToolNumber state="Default">0</ToolNumber>
+          <ToolProfile state="Default">Unspecified</ToolProfile>
+          <PlungeFeedrate state="Default">0</PlungeFeedrate>
+          <CutFeedrate state="Default">0</CutFeedrate>
+          <MaxCrossoverDistance state="Default">0</MaxCrossoverDistance>
+          <StartPoint state="Default">0,0,0</StartPoint>
+          <CustomMOPHeader state="Default" />
+          <CustomMOPFooter state="Default" />
+          <Name>Drill</Name>
+        </drill>
+        <engrave>
+          <TargetDepth state="Value">-0.005</TargetDepth>
+          <DepthIncrement state="Value">0.005</DepthIncrement>
+          <FinalDepthIncrement state="Default">0</FinalDepthIncrement>
+          <CutOrdering state="Default">LevelFirst</CutOrdering>
+          <StockSurface state="Default">0</StockSurface>
+          <RoughingClearance state="Default">0</RoughingClearance>
+          <ClearancePlane state="Value">0.5</ClearancePlane>
+          <SpindleDirection state="Default">Off</SpindleDirection>
+          <SpindleSpeed state="Default">0</SpindleSpeed>
+          <SpindleRange state="Default">0</SpindleRange>
+          <VelocityMode state="Default">Undefined</VelocityMode>
+          <primitive>
+            <prim>17</prim>
+          </primitive>
+          <Transform state="Default" />
+          <WorkPlane state="Default">XY</WorkPlane>
+          <OptimisationMode state="Default">Standard</OptimisationMode>
+          <RoughingFinishing state="Default">Roughing</RoughingFinishing>
+          <ToolDiameter state="Value">0.125</ToolDiameter>
+          <ToolNumber state="Default">0</ToolNumber>
+          <ToolProfile state="Default">Unspecified</ToolProfile>
+          <PlungeFeedrate state="Default">0</PlungeFeedrate>
+          <CutFeedrate state="Value">20</CutFeedrate>
+          <MaxCrossoverDistance state="Default">0</MaxCrossoverDistance>
+          <StartPoint state="Default">0,0,0</StartPoint>
+          <CustomMOPHeader state="Default" />
+          <CustomMOPFooter state="Default" />
+          <Name>Bend Line</Name>
+        </engrave>
+        <profile>
+          <TargetDepth state="Value">-0.08</TargetDepth>
+          <DepthIncrement state="Value">0.01</DepthIncrement>
+          <FinalDepthIncrement state="Default">0</FinalDepthIncrement>
+          <CutOrdering state="Default">LevelFirst</CutOrdering>
+          <CutWidth state="Default">0</CutWidth>
+          <StepOver state="Default">0</StepOver>
+          <StepoverFeedrate state="Default">Plunge Feedrate</StepoverFeedrate>
+          <InsideOutside state="Default">Outside</InsideOutside>
+          <MillingDirection state="Default">Conventional</MillingDirection>
+          <CollisionDetection state="Default">False</CollisionDetection>
+          <CornerOvercut state="Default">False</CornerOvercut>
+          <LeadInMove state="Default" />
+          <LeadOutMove state="Default" />
+          <HoldingTabs state="Default" />
+          <SideProfile state="Default" />
+          <StockSurface state="Default">0</StockSurface>
+          <RoughingClearance state="Default">0</RoughingClearance>
+          <ClearancePlane state="Value">0.5</ClearancePlane>
+          <SpindleDirection state="Default">Off</SpindleDirection>
+          <SpindleSpeed state="Default">0</SpindleSpeed>
+          <SpindleRange state="Default">0</SpindleRange>
+          <VelocityMode state="Default">Undefined</VelocityMode>
+          <primitive>
+            <prim>20</prim>
+          </primitive>
+          <Transform state="Default" />
+          <WorkPlane state="Default">XY</WorkPlane>
+          <OptimisationMode state="Default">Standard</OptimisationMode>
+          <RoughingFinishing state="Default">Roughing</RoughingFinishing>
+          <ToolDiameter state="Value">0.125</ToolDiameter>
+          <ToolNumber state="Default">0</ToolNumber>
+          <ToolProfile state="Default">Unspecified</ToolProfile>
+          <PlungeFeedrate state="Value">6</PlungeFeedrate>
+          <CutFeedrate state="Value">20</CutFeedrate>
+          <MaxCrossoverDistance state="Default">0</MaxCrossoverDistance>
+          <StartPoint state="Default">0,0,0</StartPoint>
+          <CustomMOPHeader state="Default" />
+          <CustomMOPFooter state="Default" />
+          <Name>Cut</Name>
+        </profile>
+      </machineops>
+      <Stock>
+        <PMin>0,0</PMin>
+        <PMax>0,0</PMax>
+        <Color>255,165,0</Color>
+      </Stock>
+      <ToolProfile>Unspecified</ToolProfile>
+      <MachiningOrigin />
+      <Nesting>
+        <BasePoint />
+        <NestMethod>None</NestMethod>
+        <Spacing>0</Spacing>
+      </Nesting>
+      <NestingItem />
+    </part>
+  </parts>
+  <ToolpathVisiblility>All</ToolpathVisiblility>
+  <ActiveLayer>0</ActiveLayer>
+  <ActivePart>Part1</ActivePart>
+</CADFile>

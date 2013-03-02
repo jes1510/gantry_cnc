@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CADFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="0.9.8.0" Name="end_spacer_block" units="Inches">
+  <layers>
+    <layer name="0" color="255,255,255">
+      <ModificationCount>0</ModificationCount>
+      <objects />
+    </layer>
+    <layer name="support_block#1" color="255,255,255">
+      <ModificationCount>0</ModificationCount>
+      <objects>
+        <circle id="384" c="0.375,2.5,0" d="0.249999999999994">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+        <circle id="385" c="5,2.5,0" d="0.25">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+        <circle id="386" c="0.375,0.5,0" d="0.249999999999998">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+        <circle id="387" c="5,0.5,0" d="0.25000000000001049">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+        <rect id="388" p="-3.6E-15,5E-15,0" w="5.3750000000000036" h="2.9999999999999951">
+          <ModificationCount>1</ModificationCount>
+          <mat m="Identity" />
+        </rect>
+        <rect id="389" p="-2.5E-15,0.96575,0" w="5.3750000000000027" h="1.0685000000000002">
+          <ModificationCount>1</ModificationCount>
+          <mat m="Identity" />
+        </rect>
+      </objects>
+    </layer>
+  </layers>
+  <MachiningOptions>
+    <FastPlungeHeight>-1</FastPlungeHeight>
+    <Stock>
+      <PMin>0,0</PMin>
+      <PMax>0,0</PMax>
+      <Color>255,165,0</Color>
+    </Stock>
+    <ToolProfile>Unspecified</ToolProfile>
+    <MachiningOrigin />
+  </MachiningOptions>
+  <parts>
+    <part Name="Part1">
+      <machineops>
+        <drill>
+          <TargetDepth state="Value">-0.8</TargetDepth>
+          <DepthIncrement state="Default">0</DepthIncrement>
+          <HoleDiameter state="Default">0</HoleDiameter>
+          <DrillLeadOut state="Default">False</DrillLeadOut>
+          <SpiralFlatBase state="Default">False</SpiralFlatBase>
+          <LeadOutLength state="Default">0</LeadOutLength>
+          <DrillingMethod state="Default">CannedCycle</DrillingMethod>
+          <PeckDistance state="Default">0</PeckDistance>
+          <RetractHeight state="Default">0</RetractHeight>
+          <Dwell state="Default">0</Dwell>
+          <CustomScript state="Default" />
+          <StockSurface state="Default">0</StockSurface>
+          <RoughingClearance state="Default">0</RoughingClearance>
+          <ClearancePlane state="Value">0.5</ClearancePlane>
+          <SpindleDirection state="Default">Off</SpindleDirection>
+          <SpindleSpeed state="Default">0</SpindleSpeed>
+          <SpindleRange state="Default">0</SpindleRange>
+          <VelocityMode state="Default">Undefined</VelocityMode>
+          <primitive>
+            <prim>384</prim>
+            <prim>385</prim>
+            <prim>386</prim>
+            <prim>387</prim>
+          </primitive>
+          <Transform state="Default" />
+          <WorkPlane state="Default">XY</WorkPlane>
+          <OptimisationMode state="Default">Standard</OptimisationMode>
+          <RoughingFinishing state="Default">Roughing</RoughingFinishing>
+          <ToolDiameter state="Value">0.25</ToolDiameter>
+          <ToolNumber state="Default">0</ToolNumber>
+          <ToolProfile state="Default">Unspecified</ToolProfile>
+          <PlungeFeedrate state="Value">6</PlungeFeedrate>
+          <CutFeedrate state="Value">20</CutFeedrate>
+          <MaxCrossoverDistance state="Default">0</MaxCrossoverDistance>
+          <StartPoint state="Default">0,0,0</StartPoint>
+          <CustomMOPHeader state="Default" />
+          <CustomMOPFooter state="Default" />
+          <Name>Drill1</Name>
+        </drill>
+        <pocket>
+          <TargetDepth state="Value">-0.125</TargetDepth>
+          <DepthIncrement state="Value">0.125</DepthIncrement>
+          <FinalDepthIncrement state="Default">0</FinalDepthIncrement>
+          <CutOrdering state="Default">LevelFirst</CutOrdering>
+          <StepOver state="Value">0.5</StepOver>
+          <StepoverFeedrate state="Default">Plunge Feedrate</StepoverFeedrate>
+          <MillingDirection state="Default">Conventional</MillingDirection>
+          <CollisionDetection state="Default">False</CollisionDetection>
+          <LeadInMove state="Default" />
+          <LeadOutMove state="Default" />
+          <RegionFillStyle state="Default">InsideOutsideOffsets</RegionFillStyle>
+          <FinishStepover state="Default">0</FinishStepover>
+          <FinishStepoverAtTargetDepth state="Default">False</FinishStepoverAtTargetDepth>
+          <StockSurface state="Default">0</StockSurface>
+          <RoughingClearance state="Default">0</RoughingClearance>
+          <ClearancePlane state="Value">0.5</ClearancePlane>
+          <SpindleDirection state="Default">Off</SpindleDirection>
+          <SpindleSpeed state="Default">0</SpindleSpeed>
+          <SpindleRange state="Default">0</SpindleRange>
+          <VelocityMode state="Default">Undefined</VelocityMode>
+          <primitive>
+            <prim>389</prim>
+          </primitive>
+          <Transform state="Default" />
+          <WorkPlane state="Default">XY</WorkPlane>
+          <OptimisationMode state="Default">Standard</OptimisationMode>
+          <RoughingFinishing state="Default">Roughing</RoughingFinishing>
+          <ToolDiameter state="Value">0.25</ToolDiameter>
+          <ToolNumber state="Default">0</ToolNumber>
+          <ToolProfile state="Default">Unspecified</ToolProfile>
+          <PlungeFeedrate state="Value">6</PlungeFeedrate>
+          <CutFeedrate state="Value">20</CutFeedrate>
+          <MaxCrossoverDistance state="Default">0</MaxCrossoverDistance>
+          <StartPoint state="Default">0,0,0</StartPoint>
+          <CustomMOPHeader state="Default" />
+          <CustomMOPFooter state="Default" />
+          <Name>Pocket1</Name>
+        </pocket>
+        <profile>
+          <TargetDepth state="Value">-0.8</TargetDepth>
+          <DepthIncrement state="Value">0.25</DepthIncrement>
+          <FinalDepthIncrement state="Default">0</FinalDepthIncrement>
+          <CutOrdering state="Default">LevelFirst</CutOrdering>
+          <CutWidth state="Default">0</CutWidth>
+          <StepOver state="Default">0</StepOver>
+          <StepoverFeedrate state="Default">Plunge Feedrate</StepoverFeedrate>
+          <InsideOutside state="Default">Outside</InsideOutside>
+          <MillingDirection state="Default">Conventional</MillingDirection>
+          <CollisionDetection state="Default">False</CollisionDetection>
+          <CornerOvercut state="Default">False</CornerOvercut>
+          <LeadInMove state="Default" />
+          <LeadOutMove state="Default" />
+          <HoldingTabs state="Default" />
+          <SideProfile state="Default" />
+          <StockSurface state="Default">0</StockSurface>
+          <RoughingClearance state="Default">0</RoughingClearance>
+          <ClearancePlane state="Value">0.5</ClearancePlane>
+          <SpindleDirection state="Default">Off</SpindleDirection>
+          <SpindleSpeed state="Default">0</SpindleSpeed>
+          <SpindleRange state="Default">0</SpindleRange>
+          <VelocityMode state="Default">Undefined</VelocityMode>
+          <primitive>
+            <prim>388</prim>
+          </primitive>
+          <Transform state="Default" />
+          <WorkPlane state="Default">XY</WorkPlane>
+          <OptimisationMode state="Default">Standard</OptimisationMode>
+          <RoughingFinishing state="Default">Roughing</RoughingFinishing>
+          <ToolDiameter state="Value">0.25</ToolDiameter>
+          <ToolNumber state="Default">0</ToolNumber>
+          <ToolProfile state="Default">Unspecified</ToolProfile>
+          <PlungeFeedrate state="Value">6</PlungeFeedrate>
+          <CutFeedrate state="Value">20</CutFeedrate>
+          <MaxCrossoverDistance state="Default">0</MaxCrossoverDistance>
+          <StartPoint state="Default">0,0,0</StartPoint>
+          <CustomMOPHeader state="Default" />
+          <CustomMOPFooter state="Default" />
+          <Name>Profile1</Name>
+        </profile>
+      </machineops>
+      <Stock>
+        <PMin>0,0</PMin>
+        <PMax>0,0</PMax>
+        <Color>255,165,0</Color>
+      </Stock>
+      <ToolProfile>Unspecified</ToolProfile>
+      <MachiningOrigin />
+      <Nesting>
+        <BasePoint />
+        <NestMethod>None</NestMethod>
+        <Spacing>0</Spacing>
+      </Nesting>
+      <NestingItem />
+    </part>
+  </parts>
+  <ToolpathVisiblility>All</ToolpathVisiblility>
+  <ActiveLayer>support_block#1</ActiveLayer>
+  <ActivePart>Part1</ActivePart>
+</CADFile>

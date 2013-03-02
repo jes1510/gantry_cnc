@@ -1,0 +1,13 @@
+(VARIABLES)
+(END-VARIABLES)
+(INIT)
+G17 (XY-Plane)
+G40 (Radius Compensation off)
+G49 (No Tool Length Offset)
+G54 (Select Coordinate system 1)
+G80 (Cancel Modal Motion)
+G90 (Absolute Distance Mode)
+G20 (UNITS: INCH)
+G94 (UNITS per minute feed rate)
+(END-INIT)
+M2

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CADFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="0.9.8.0" Name="end_spacer_block" units="Inches">
+  <layers>
+    <layer name="0" color="255,255,255">
+      <ModificationCount>0</ModificationCount>
+      <objects />
+    </layer>
+    <layer name="support_block#1" color="255,255,255">
+      <ModificationCount>0</ModificationCount>
+      <objects>
+        <circle id="384" c="0.375,2.5,0" d="0.249999999999994">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+        <circle id="385" c="5,2.5,0" d="0.25">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+        <circle id="386" c="0.375,0.5,0" d="0.249999999999998">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+        <circle id="387" c="5,0.5,0" d="0.25000000000001049">
+          <ModificationCount>0</ModificationCount>
+          <mat m="Identity" />
+        </circle>
+        <rect id="388" p="-3.6E-15,5E-15,0" w="5.3750000000000036" h="2.9999999999999951">
+          <ModificationCount>1</ModificationCount>
+          <mat m="Identity" />
+        </rect>
+        <rect id="389" p="-2.5E-15,0.96575,0" w="5.3750000000000027" h="1.0685000000000002">
+          <ModificationCount>1</ModificationCount>
+          <mat m="Identity" />
+        </rect>
+      </objects>
+    </layer>
+  </layers>
+  <MachiningOptions>
+    <FastPlungeHeight>-1</FastPlungeHeight>
+    <Stock>
+      <PMin>0,0</PMin>
+      <PMax>0,0</PMax>
+      <Color>255,165,0</Color>
+    </Stock>
+    <ToolProfile>Unspecified</ToolProfile>
+    <MachiningOrigin />
+  </MachiningOptions>
+  <parts />
+  <ToolpathVisiblility>All</ToolpathVisiblility>
+  <ActiveLayer>support_block#1</ActiveLayer>
+</CADFile>
