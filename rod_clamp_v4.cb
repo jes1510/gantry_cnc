@@ -3,7 +3,30 @@
   <layers>
     <layer name="0" color="255,255,255">
       <ModificationCount>0</ModificationCount>
-      <objects />
+      <objects>
+        <pline id="19">
+          <ModificationCount>1</ModificationCount>
+          <mat m="Identity" />
+          <pts>
+            <p>1.05541288765389,0,0</p>
+            <p>1.05541288765389,0.38,0</p>
+            <p b="0.78020127663926264">1.452399472774,0.38,0</p>
+            <p>1.45786618104095,1.10900811603727,0</p>
+            <p b="0.12727674993893723">0.993160701775533,1.22924833817323,0</p>
+            <p>0.742665073532241,1.22924833817323,0</p>
+            <p b="0.77418721721026962">0.277959594266826,1.10900811603727,0</p>
+            <p>0.277959594266826,0.38137082974591,0</p>
+            <p>0.680412887653887,0.27723804983399,0</p>
+            <p>0.680412887653887,0.0005935468751526,0</p>
+            <p>0.805412887653887,0.0005935468751526,0</p>
+            <p b="-7.3838798878989564">0.805412887653887,0.518528208424847,0</p>
+            <p>0.930412887653887,0.518528208424847,0</p>
+            <p>0.930412887653887,0,0</p>
+            <p>1.05541288765389,0,0</p>
+            <p>1.05541288765389,0.277238049833991,0</p>
+          </pts>
+        </pline>
+      </objects>
     </layer>
     <layer name="Layer0" color="255,255,255">
       <ModificationCount>0</ModificationCount>
@@ -20,26 +43,6 @@
           <ModificationCount>0</ModificationCount>
           <mat m="Identity" />
         </circle>
-        <pline id="17" Closed="true">
-          <ModificationCount>1</ModificationCount>
-          <mat m="Identity" />
-          <pts>
-            <p>0.805412887653887,0.518528208424847,0</p>
-            <p>0.805412887653887,0.0005935468751526,0</p>
-            <p>0.680412887653887,0.0005935468751526,0</p>
-            <p>0.680412887653887,0.27723804983399,0</p>
-            <p b="-0.77418721721026962">0.277959594266826,0.38137082974591,0</p>
-            <p>0.277959594266826,1.10900811603727,0</p>
-            <p b="-0.12727674993893723">0.742665073532241,1.22924833817323,0</p>
-            <p>0.993160701775533,1.22924833817323,0</p>
-            <p b="-0.77418721721026962">1.45786618104095,1.10900811603727,0</p>
-            <p>1.45786618104095,0.38137082974591,0</p>
-            <p>1.05541288765389,0.277238049833991,0</p>
-            <p>1.05541288765389,0,0</p>
-            <p>0.930412887653887,0,0</p>
-            <p b="7.3838798878989564">0.930488377302602,0.518549037609431,0</p>
-          </pts>
-        </pline>
       </objects>
     </layer>
   </layers>
@@ -57,23 +60,25 @@
   <parts>
     <part Name="Part1">
       <machineops>
-        <pocket>
-          <TargetDepth state="Value">-0.55</TargetDepth>
+        <profile>
+          <TargetDepth state="Value">-0.5</TargetDepth>
           <DepthIncrement state="Value">0.125</DepthIncrement>
           <FinalDepthIncrement state="Default">0</FinalDepthIncrement>
           <CutOrdering state="Default">LevelFirst</CutOrdering>
-          <StepOver state="Value">0.5</StepOver>
+          <CutWidth state="Default">0</CutWidth>
+          <StepOver state="Default">0</StepOver>
           <StepoverFeedrate state="Default">Plunge Feedrate</StepoverFeedrate>
+          <InsideOutside state="Value">Inside</InsideOutside>
           <MillingDirection state="Default">Conventional</MillingDirection>
           <CollisionDetection state="Default">False</CollisionDetection>
+          <CornerOvercut state="Default">False</CornerOvercut>
           <LeadInMove state="Default" />
           <LeadOutMove state="Default" />
-          <RegionFillStyle state="Default">InsideOutsideOffsets</RegionFillStyle>
-          <FinishStepover state="Default">0</FinishStepover>
-          <FinishStepoverAtTargetDepth state="Default">False</FinishStepoverAtTargetDepth>
+          <HoldingTabs state="Default" />
+          <SideProfile state="Default" />
           <StockSurface state="Default">0</StockSurface>
           <RoughingClearance state="Default">0</RoughingClearance>
-          <ClearancePlane state="Value">0.5</ClearancePlane>
+          <ClearancePlane state="Value">0.25</ClearancePlane>
           <SpindleDirection state="Default">Off</SpindleDirection>
           <SpindleSpeed state="Default">0</SpindleSpeed>
           <SpindleRange state="Default">0</SpindleRange>
@@ -96,14 +101,14 @@
           <CustomMOPHeader state="Default" />
           <CustomMOPFooter state="Default" />
           <Name>Holes</Name>
-        </pocket>
+        </profile>
         <profile>
-          <TargetDepth state="Value">-0.55</TargetDepth>
+          <TargetDepth state="Value">-0.5</TargetDepth>
           <DepthIncrement state="Value">0.125</DepthIncrement>
           <FinalDepthIncrement state="Default">0</FinalDepthIncrement>
           <CutOrdering state="Default">LevelFirst</CutOrdering>
           <CutWidth state="Default">0</CutWidth>
-          <StepOver state="Value">0.5</StepOver>
+          <StepOver state="Default">0</StepOver>
           <StepoverFeedrate state="Default">Plunge Feedrate</StepoverFeedrate>
           <InsideOutside state="Default">Outside</InsideOutside>
           <MillingDirection state="Default">Conventional</MillingDirection>
@@ -115,13 +120,13 @@
           <SideProfile state="Default" />
           <StockSurface state="Default">0</StockSurface>
           <RoughingClearance state="Default">0</RoughingClearance>
-          <ClearancePlane state="Value">0.5</ClearancePlane>
+          <ClearancePlane state="Value">0.25</ClearancePlane>
           <SpindleDirection state="Default">Off</SpindleDirection>
           <SpindleSpeed state="Default">0</SpindleSpeed>
           <SpindleRange state="Default">0</SpindleRange>
           <VelocityMode state="Default">Undefined</VelocityMode>
           <primitive>
-            <prim>17</prim>
+            <prim>19</prim>
           </primitive>
           <Transform state="Default" />
           <WorkPlane state="Default">XY</WorkPlane>
@@ -136,7 +141,7 @@
           <StartPoint state="Default">0,0,0</StartPoint>
           <CustomMOPHeader state="Default" />
           <CustomMOPFooter state="Default" />
-          <Name>Profile1</Name>
+          <Name>outline</Name>
         </profile>
       </machineops>
       <Stock>
